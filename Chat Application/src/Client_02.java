@@ -15,7 +15,7 @@ public class Client_02 extends Application {
         primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/UserLoginForm.fxml"))));
         primaryStage.setResizable(false);
         //primaryStage.getIcons().add(new Image("location"));
-        primaryStage.setTitle("sample title");
+        primaryStage.setTitle("Group Chat Application");
         primaryStage.centerOnScreen();
         primaryStage.show();
     }
