@@ -97,5 +97,15 @@ public class ChatRoomFormController extends Thread {
 
     public void Camera_On_Mouse_Clicked(MouseEvent mouseEvent) {
 
+        /*String msg = txtTypeMessage.getText();
+        writer.println(lblName.getText() + ": " + txtTypeMessage.getText());
+        txtArea.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
+        txtArea.appendText("YOU: " +" "+ msg + "\n");
+        txtTypeMessage.clear();
+        if(msg.equalsIgnoreCase("BYE") || (msg.equalsIgnoreCase("logout"))) {
+            System.exit(0);
+            Stage stage = (Stage) txtTypeMessage.getScene().getWindow();
+            stage.close();
+        }*/
     }
 }

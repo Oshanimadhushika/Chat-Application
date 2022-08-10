@@ -1,5 +1,9 @@
 package server;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -12,6 +16,10 @@ public class Server {
 
         ServerSocket serverSocket=new ServerSocket(5001);
         Socket accept;
+        BufferedImage image = ImageIO.read(new File("This PC\\Pictures"));
+
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        ImageIO.write(image, "jpg", byteArrayOutputStream);
 
         while (true){
 

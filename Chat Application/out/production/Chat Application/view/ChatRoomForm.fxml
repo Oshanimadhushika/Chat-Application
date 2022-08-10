@@ -48,12 +48,12 @@
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font></JFXTextArea>
-      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="370.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="388.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/account.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblName" layoutX="400.0" layoutY="5.0" prefHeight="25.0" prefWidth="146.0">
+      <Label fx:id="lblName" layoutX="419.0" layoutY="5.0" prefHeight="25.0" prefWidth="123.0">
          <font>
             <Font name="Sitka Small Bold Italic" size="17.0" />
          </font>
