@@ -69,7 +69,7 @@ public class ChatRoomFormController extends Thread {
                 String[] tokens = msg.split(" ");
                 String cmd = tokens[0];
 
-//                txtTextArea.appendText(cmd+"\n");
+
                 StringBuilder fullMsg = new StringBuilder();
                 for (int i = 1; i < tokens.length; i++) {
                     fullMsg.append(tokens[i]);
@@ -133,9 +133,7 @@ public class ChatRoomFormController extends Thread {
 
 
                 } else {
-                    //For the Text
-//                    text.setFill(Color.WHITE);
-                    //   text.getStyleClass().add("message");
+
                     TextFlow tempFlow = new TextFlow();
 
                     if (!cmd.equalsIgnoreCase(lblName.getText() + ":")) {
@@ -156,22 +154,19 @@ public class ChatRoomFormController extends Thread {
 
                     if (!cmd.equalsIgnoreCase(lblName.getText() + ":")) {
 
-                        //  tempFlow.getStyleClass().add("tempFlowFlipped");
-                        //  flow.getStyleClass().add("textFlowFlipped");
+
                         vbox.setAlignment(Pos.TOP_LEFT);
                         hBox.setAlignment(Pos.CENTER_LEFT);
                         hBox.getChildren().add(flow);
 
                     } else {
-                        // text.setFill(Color.WHITE);
-                        // tempFlow.getStyleClass().add("tempFlow");
-                        // flow.getStyleClass().add("textFlow");
+
                         Text text2 = new Text(fullMsg + ": Me");
                         TextFlow flow2 = new TextFlow(text2);
                         hBox.setAlignment(Pos.BOTTOM_RIGHT);
                         hBox.getChildren().add(flow2);
                     }
-                    //  hBox.getStyleClass().add("hbox");
+
                     Platform.runLater(() -> vbox.getChildren().addAll(hBox));
                 }
             }
@@ -183,16 +178,7 @@ public class ChatRoomFormController extends Thread {
 
         public void SendOnAction(ActionEvent actionEvent) {
 
-       /* String msg = txtTypeMessage.getText();
-        writer.println(lblName.getText() + ": " + txtTypeMessage.getText());
-        txtArea.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
-        txtArea.appendText("YOU : " +" "+ msg + "\n");
-        txtTypeMessage.clear();
-        if(msg.equalsIgnoreCase("BYE") ||(msg.equalsIgnoreCase("Bye") ||(msg.equalsIgnoreCase("bye") ||(msg.equalsIgnoreCase("logout"))))) {
-            System.exit(0);
-//            Stage stage = (Stage) txtTextMsg.getScene().getWindow();
-//            stage.close();
-        }*/
+
 
             String msg = txtTypeMessage.getText();
             writer.println(lblName.getText() + ": " + txtTypeMessage.getText());
