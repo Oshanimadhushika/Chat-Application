@@ -72,7 +72,7 @@ public class ChatRoomFormController extends Thread {
 
                 StringBuilder fullMsg = new StringBuilder();
                 for (int i = 1; i < tokens.length; i++) {
-                    fullMsg.append(tokens[i]);
+                    fullMsg.append(tokens[i]+" ");
                 }
 
 
